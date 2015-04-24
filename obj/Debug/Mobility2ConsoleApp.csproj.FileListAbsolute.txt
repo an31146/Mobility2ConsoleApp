@@ -1,0 +1,14 @@
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Mobility2ConsoleApp.exe.config
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\obj\Debug\Mobility2ConsoleApp.csprojResolveAssemblyReference.cache
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Mobility2ConsoleApp.exe
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Mobility2ConsoleApp.pdb
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\obj\Debug\Mobility2ConsoleApp.exe
+c:\users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\obj\Debug\Mobility2ConsoleApp.pdb
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Interwoven.Mobility2.WebService.dll
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Interwoven.WorkSite.Common.dll
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\iManage2.dll
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\obj\Debug\Interop.IManage.dll
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\obj\Debug\Mobility2ConsoleApp.csproj.ResolveComReference.cache
+C:\Users\hammondr\documents\visual studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\Interop.iManage.dll
+C:\Users\hammondr\Documents\Visual Studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\RestSharp.dll
+C:\Users\hammondr\Documents\Visual Studio 2012\Projects\Mobility2ConsoleApp\Mobility2ConsoleApp\bin\Debug\RestSharp.xml
