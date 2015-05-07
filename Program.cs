@@ -48,8 +48,12 @@ namespace Mobility2ConsoleApp
             ReturnedProfile GetProfile(GetProfileRequest profile);
 
             [OperationContract]
-            [WebInvoke(BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Xml, ResponseFormat = WebMessageFormat.Xml)]
+            [WebInvoke(BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
             SimpleContentsCollection SearchDocuments(SearchDocumentsRequest request);
+
+            [OperationContract]
+            [WebInvoke(BodyStyle = WebMessageBodyStyle.Bare, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+            SimpleContentsCollection Worklist(BasicRequest details);
         }
 
         static void Main(string[] args)
@@ -58,7 +62,7 @@ namespace Mobility2ConsoleApp
             RestSharp.RestRequest rr = new RestSharp.RestRequest(RestSharp.Method.GET);
 
             using (ChannelFactory<IService> cf = new ChannelFactory<IService>(new WebHttpBinding(), "http://win2012svr:8010/Mobility2/MobilityService.svc"))
-            //using (ChannelFactory<IService> cf = new ChannelFactory<IService>(new WebHttpBinding(), "http://win2012svr:4430/"))
+            //using (ChannelFactory<IService> cf = new ChannelFactory<IService>(new WebHttpBinding(), "http://win2012svr/Mobility2/"))
             {
                 cf.Endpoint.EndpointBehaviors.Add(new WebHttpBehavior());
                 IService channel = cf.CreateChannel();
@@ -72,8 +76,8 @@ namespace Mobility2ConsoleApp
                 
                 AuthenticationInfo auth1 = new AuthenticationInfo();
                 auth1.appUuid = AppUuid;
-                auth1.userID = "homer";
-                auth1.password = "homer$_";
+                auth1.userID = "wsadmin";
+                auth1.password = "mhdocs_";
                 auth1.domain = "BEANTOWN";
 
                 PingRequest pingReq1 = new PingRequest();
@@ -93,6 +97,8 @@ namespace Mobility2ConsoleApp
                 prof1.DocNum = 2081;
                 prof1.DocVer = 1;
                 ReturnedProfile retProf = channel.GetProfile(prof1);
+
+                SimpleContentsCollection worklist1 = channel.Worklist(req1);
 
                 SearchDocumentsRequest search1 = new SearchDocumentsRequest();
                 search1.Authentication = auth1;
