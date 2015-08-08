@@ -9,7 +9,7 @@ using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Web;
 
-using System.Web.Helpers;
+//using System.Web.Helpers;
 using System.Xml;
 using System.IO;
 
@@ -85,7 +85,7 @@ namespace Mobility2ConsoleApp
                 auth1.appUuid = AppUuid;
                 auth1.userID = "wsadmin";
                 auth1.password = "mhdocs_";
-                auth1.domain = "BEANTOWN";
+                auth1.domain = "";
 
                 BasicRequest req1 = new BasicRequest();
                 req1.Authentication = auth1;

@@ -36,26 +36,25 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Interop.iManage, Version=9.0.0.0, Culture=neutral, PublicKeyToken=601623aa95e741f5, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Interop.iManage">
+      <HintPath>..\..\..\Interop.iManage.dll</HintPath>
       <EmbedInteropTypes>False</EmbedInteropTypes>
-      <HintPath>..\..\..\..\..\Downloads\Interop.iManage.dll</HintPath>
     </Reference>
     <Reference Include="Interwoven.Mobility2.WebService">
-      <HintPath>..\..\..\..\..\Downloads\Interwoven.Mobility2.WebService.dll</HintPath>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\..\Interwoven.Mobility2.WebService.dll</HintPath>
     </Reference>
     <Reference Include="Interwoven.WorkSite.Common">
-      <HintPath>..\..\..\..\..\Downloads\Interwoven.WorkSite.Common.dll</HintPath>
+      <HintPath>..\..\..\Interwoven.WorkSite.Common.dll</HintPath>
     </Reference>
-    <Reference Include="RestSharp, Version=105.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.105.0.1\lib\net4\RestSharp.dll</HintPath>
+    <Reference Include="RestSharp, Version=105.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\RestSharp.105.1.0\lib\net451\RestSharp.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
